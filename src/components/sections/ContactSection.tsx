@@ -17,7 +17,7 @@ export function ContactSection() {
           <br />
           bersama.
         </h2>
-        <p className="text-sm text-[#7A7870] dark:text-[#6B6860] mb-12 font-light max-w-md">
+        <p className="text-sm text-[#7A7870] dark:text-[#8C8980] mb-12 font-light max-w-md">
           Jangan ragu untuk menghubungi saya melalui email atau LinkedIn. Saya terbuka untuk diskusi, kolaborasi, atau peluang kerja.
         </p>
         <motion.div
@@ -25,18 +25,32 @@ export function ContactSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-4"
+          className="grid lg:grid-cols-3 gap-4"
         >
-          {contacts.map(({ label, value }) => (
-            <motion.div
-              key={label}
-              variants={fadeUp}
-              className="bg-white dark:bg-[#1A1917] border border-[#E8E4DC] dark:border-white/10 rounded-xl p-6 hover:border-[#C9A96E] dark:hover:border-[#C9A96E] transition-colors"
-            >
-              <p className="text-[10px] uppercase tracking-widest text-[#C9A96E] mb-2">{label}</p>
-              <p className="text-sm">{value}</p>
-            </motion.div>
-          ))}
+          {contacts.map(({ label, value, href }) =>
+            href ? (
+              <motion.a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                variants={fadeUp}
+                className="bg-white dark:bg-[#1A1917] border border-[#E8E4DC] dark:border-white/10 rounded-xl p-6 hover:border-[#C9A96E] dark:hover:border-[#C9A96E] transition-colors block"
+              >
+                <p className="text-[10px] uppercase tracking-widest text-[#C9A96E] mb-2">{label}</p>
+                <p className="text-sm hover:text-[#C9A96E] transition-colors">{value}</p>
+              </motion.a>
+            ) : (
+              <motion.div
+                key={label}
+                variants={fadeUp}
+                className="bg-white dark:bg-[#1A1917] border border-[#E8E4DC] dark:border-white/10 rounded-xl p-6 hover:border-[#C9A96E] dark:hover:border-[#C9A96E] transition-colors"
+              >
+                <p className="text-[10px] uppercase tracking-widest text-[#C9A96E] mb-2">{label}</p>
+                <p className="text-sm">{value}</p>
+              </motion.div>
+            )
+          )}
         </motion.div>
       </div>
     </section>

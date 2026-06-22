@@ -6,8 +6,6 @@ export const projects = [
     tech: ["Next.js", "NestJS", "MySQL", "Chart.js"],
     link: "https://absensi-sekolah-fe.vercel.app",
     github: { fe: "https://github.com/muhammadfakhriramadhan/absensi-sekolah-fe", be: "https://github.com/muhammadfakhriramadhan/absensi-sekolah-be" },
-    challenge:
-      "Tantangan utama adalah menghadirkan update kehadiran real-time tanpa lag. Solusinya pakai polling interval yang dioptimasi supaya server nggak overload tetapi data tetap fresh.",
     credentials: [
       {
         role: "Guru",
@@ -28,8 +26,6 @@ export const projects = [
     tech: ["Next.js", "NestJS", "MySQL", "Chart.js"],
     link: "https://pengeluaran-dan-pemasukan-barang-fe.vercel.app/",
     github: { fe: "https://github.com/muhammadfakhriramadhan/stokmaster-fe", be: "https://github.com/muhammadfakhriramadhan/stokmaster-be" },
-    challenge:
-      "Kesulitan menjaga konsistensi stok saat transaksi bersamaan. Solusinya pakai row-level locking di MySQL supaya kalkulasi stok tetap akurat walau banyak user aktif.",
     credentials: [
       {
         role: "Admin",
@@ -45,8 +41,6 @@ export const projects = [
     tech: ["Next.js", "NestJS", "MySQL", "Chart.js"],
     link: "https://e-commerce-fe-theta.vercel.app",
     github: { fe: "https://github.com/muhammadfakhriramadhan/e-commerce-fe", be: "https://github.com/muhammadfakhriramadhan/e-commerce-be" },
-    challenge:
-      "Tantangannya membangun flow checkout yang seamless dari cart hingga payment. Solusinya pakai state management yang rapi di frontend dan endpoint transaksi yang atomic di backend.",
     credentials: [
       {
         role: "customer",
@@ -76,15 +70,17 @@ export const tools = [
 export const contacts = [
   {
     label: "Email",
-    value: "muhammadfakhriramadhan08@email.com",
+    value: "muhammadfakhriramadhan08@gmail.com",
   },
   {
     label: "LinkedIn",
     value: "Muhammad Fakhri Ramadhan",
+    href: "https://www.linkedin.com/in/muhammad-fakhri-ramadhan-1947a6376/",
   },
   {
     label: "WhatsApp",
     value: "+62 821-2558-9800",
+    href: "https://wa.me/6282125589800",
   },
 ];
 

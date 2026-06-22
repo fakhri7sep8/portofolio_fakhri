@@ -10,7 +10,7 @@ export function AboutSection() {
       id="tentang"
       className="py-24 px-10 bg-white dark:bg-[#161514] border-y border-[#E8E4DC] dark:border-white/10 transition-colors duration-300"
     >
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-start">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20 items-start">
         {/* Left: Heading + Stats */}
         <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true }}>
           <motion.p variants={fadeUp} className="text-xs uppercase tracking-widest text-[#C9A96E] mb-3">
@@ -30,14 +30,14 @@ export function AboutSection() {
             {[
               { num: "3+", lbl: "Project" },
               { num: "5+", lbl: "Tools" },
-              { num: "2yr", lbl: "Belajar" },
+              { num: "3yr", lbl: "Belajar" },
             ].map(({ num, lbl }, i) => (
               <div
                 key={i}
                 className="py-5 text-center border-r border-[#E8E4DC] dark:border-white/10 last:border-r-0 bg-[#FAF8F5] dark:bg-[#111010]"
               >
                 <p className="font-serif text-3xl">{num}</p>
-                <p className="text-[10px] uppercase tracking-widest text-[#7A7870] dark:text-[#6B6860] mt-1">{lbl}</p>
+                <p className="text-[10px] uppercase tracking-widest text-[#7A7870] dark:text-[#8C8980] mt-1">{lbl}</p>
               </div>
             ))}
           </motion.div>
@@ -45,12 +45,12 @@ export function AboutSection() {
 
         {/* Right: Bio + Skills */}
         <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true }}>
-          <motion.p variants={fadeUp} className="text-[#7A7870] dark:text-[#6B6860] leading-relaxed font-light mb-5">
+          <motion.p variants={fadeUp} className="text-[#7A7870] dark:text-[#8C8980] leading-relaxed font-light mb-5">
             Saya adalah siswa SMK jurusan Rekayasa Perangkat Lunak yang passionate
             membangun aplikasi web full-stack. Bagi saya, kode yang baik
             bukan hanya kode yang jalan — tapi kode yang memecahkan masalah nyata.
           </motion.p>
-          <motion.p variants={fadeUp} className="text-[#7A7870] dark:text-[#6B6860] leading-relaxed font-light mb-8">
+          <motion.p variants={fadeUp} className="text-[#7A7870] dark:text-[#8C8980] leading-relaxed font-light mb-8">
             Terbiasa bekerja dari frontend (React, Next.js, Tailwind CSS)
             hingga backend (NestJS, Node.js) dan database (MySQL) untuk
             membangun aplikasi web end-to-end.

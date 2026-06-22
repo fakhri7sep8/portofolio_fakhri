@@ -44,7 +44,7 @@ export function ProjectsSection() {
                   {p.num}
                 </span>
 
-                <span className="absolute top-3 left-3 text-[10px] bg-white dark:bg-[#111010] border border-[#E8E4DC] dark:border-white/10 rounded px-2 py-0.5 text-[#7A7870] dark:text-[#6B6860] tracking-wide">
+                <span className="absolute top-3 left-3 text-[10px] bg-white dark:bg-[#111010] border border-[#E8E4DC] dark:border-white/10 rounded px-2 py-0.5 text-[#7A7870] dark:text-[#8C8980] tracking-wide">
                   {p.num} / 03
                 </span>
               </div>
@@ -52,7 +52,7 @@ export function ProjectsSection() {
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-serif text-lg mb-2">{p.title}</h3>
 
-                <p className="text-sm text-[#7A7870] dark:text-[#6B6860] leading-relaxed font-light mb-3">
+                <p className="text-sm text-[#7A7870] dark:text-[#8C8980] leading-relaxed font-light mb-3">
                   {p.desc}
                 </p>
 
@@ -68,16 +68,12 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                {/* Challenge */}
-                <p className="text-xs text-[#7A7870] dark:text-[#6B6860] leading-relaxed font-light italic mb-4">
-                  💡 {p.challenge}
-                </p>
               </div>
 
               <div className="border-t border-[#E8E4DC] dark:border-white/10">
                 <button
                   onClick={() => setSelectedProject(p)}
-                  className="w-full py-3 text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#6B6860] hover:bg-[#F8F6F1] dark:hover:bg-white/5 transition-colors"
+                  className="w-full py-3 text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#8C8980] hover:bg-[#F8F6F1] dark:hover:bg-white/5 transition-colors"
                 >
                   Demo Access
                 </button>
@@ -96,7 +92,7 @@ export function ProjectsSection() {
                     href={p.github.fe}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 text-center py-3 text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#6B6860] hover:bg-[#F8F6F1] dark:hover:bg-white/5 transition-colors"
+                    className="flex-1 text-center py-3 text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#8C8980] hover:bg-[#F8F6F1] dark:hover:bg-white/5 transition-colors"
                   >
                     GitHub FE →
                   </a>
@@ -104,7 +100,7 @@ export function ProjectsSection() {
                     href={p.github.be}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 text-center py-3 text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#6B6860] hover:bg-[#F8F6F1] dark:hover:bg-white/5 transition-colors"
+                    className="flex-1 text-center py-3 text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#8C8980] hover:bg-[#F8F6F1] dark:hover:bg-white/5 transition-colors"
                   >
                     GitHub BE →
                   </a>
@@ -155,7 +151,7 @@ export function ProjectsSection() {
 
                     <div className="space-y-2">
                       <div>
-                        <p className="text-[10px] uppercase tracking-wide text-[#7A7870] dark:text-[#6B6860]">
+                        <p className="text-[10px] uppercase tracking-wide text-[#7A7870] dark:text-[#8C8980]">
                           Username
                         </p>
 
@@ -165,7 +161,7 @@ export function ProjectsSection() {
                       </div>
 
                       <div>
-                        <p className="text-[10px] uppercase tracking-wide text-[#7A7870] dark:text-[#6B6860]">
+                        <p className="text-[10px] uppercase tracking-wide text-[#7A7870] dark:text-[#8C8980]">
                           Password
                         </p>
 

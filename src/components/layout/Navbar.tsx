@@ -27,7 +27,7 @@ export function Navbar({ dark, onToggleDark }: NavbarProps) {
                       .getElementById(item.toLowerCase().replace(" ", "-"))
                       ?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#6B6860] hover:text-[#C9A96E] dark:hover:text-[#C9A96E] transition-colors cursor-pointer"
+                  className="text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#8C8980] hover:text-[#C9A96E] dark:hover:text-[#C9A96E] transition-colors cursor-pointer"
                 >
                   {item}
                 </a>
@@ -37,7 +37,7 @@ export function Navbar({ dark, onToggleDark }: NavbarProps) {
           <button
             onClick={onToggleDark}
             aria-label="Toggle dark mode"
-            className="w-8 h-8 flex items-center justify-center rounded-full border border-[#E8E4DC] dark:border-white/10 text-[#7A7870] dark:text-[#6B6860] hover:border-[#C9A96E] hover:text-[#C9A96E] dark:hover:border-[#C9A96E] dark:hover:text-[#C9A96E] transition-all"
+            className="w-8 h-8 flex items-center justify-center rounded-full border border-[#E8E4DC] dark:border-white/10 text-[#7A7870] dark:text-[#8C8980] hover:border-[#C9A96E] hover:text-[#C9A96E] dark:hover:border-[#C9A96E] dark:hover:text-[#C9A96E] transition-all"
           >
             {dark ? <SunIcon /> : <MoonIcon />}
           </button>

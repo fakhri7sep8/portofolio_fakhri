@@ -12,7 +12,7 @@ export function CVSection() {
         <h2 className="font-serif text-4xl tracking-tight mb-6">
           Unduh CV saya
         </h2>
-        <p className="text-sm text-[#7A7870] dark:text-[#6B6860] mb-10 max-w-md mx-auto font-light">
+        <p className="text-sm text-[#7A7870] dark:text-[#8C8980] mb-10 max-w-md mx-auto font-light">
           Ingin tahu lebih detail tentang pengalaman dan skill saya? Download CV saya dalam format PDF.
         </p>
         <motion.a

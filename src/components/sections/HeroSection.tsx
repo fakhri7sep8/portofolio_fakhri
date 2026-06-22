@@ -6,7 +6,7 @@ import { fadeUp, stagger } from "@/lib/motion";
 export function HeroSection() {
   return (
     <section id="beranda" className="px-10 py-24">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_360px] gap-20 items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-20 items-center">
         {/* Left: Text */}
         <motion.div variants={stagger} initial="hidden" animate="show">
           <motion.div
@@ -30,7 +30,7 @@ export function HeroSection() {
 
           <motion.p
             variants={fadeUp}
-            className="text-[#7A7870] dark:text-[#6B6860] text-base max-w-lg leading-relaxed font-light mb-10"
+            className="text-[#7A7870] dark:text-[#8C8980] text-base max-w-lg leading-relaxed font-light mb-10"
           >
             Siswa SMK RPL yang berfokus pada pengembangan web full-stack{" "}
             <span className="text-[#0D0D0B] dark:text-[#EDE9E3] font-normal">
@@ -72,7 +72,7 @@ export function HeroSection() {
             F
           </div>
           <p className="font-serif text-lg">Fakhri Ramadhan</p>
-          <p className="text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#6B6860] mb-5">
+          <p className="text-xs uppercase tracking-widest text-[#7A7870] dark:text-[#8C8980] mb-5">
             Software Engineer
           </p>
           <div className="border-t border-[#E8E4DC] dark:border-white/10 pt-5 flex flex-col gap-4">
@@ -88,10 +88,10 @@ export function HeroSection() {
               },
               { label: "Fokus", value: "Full-Stack Web Development" },
               { label: "Stack", value: "Next.js · NestJS · MySQL · Chart.js" },
-              { label: "Pengalaman", value: "2+ tahun belajar" },
+              { label: "Pengalaman", value: "3 tahun belajar" },
             ].map(({ label, value }) => (
               <div key={label}>
-                <p className="text-[10px] uppercase tracking-widest text-[#7A7870] dark:text-[#6B6860] mb-1">{label}</p>
+                <p className="text-[10px] uppercase tracking-widest text-[#7A7870] dark:text-[#8C8980] mb-1">{label}</p>
                 <div className="text-sm">{value}</div>
               </div>
             ))}
